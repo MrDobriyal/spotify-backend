@@ -1,0 +1,21 @@
+//register
+{
+  "name": "Test",
+  "email": "test@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+//login
+authorization
+bearer token
+"1|85QYB34WzROY2sDrhdCVH0pRouF82aUoRoJcLvjSd855f6a2"
+
+//user
+add
+Accept: application/json
+to get reply in json if there is no token
+
+php artisan config:cache
+php artisan view:clear
+php artisan cache:clear

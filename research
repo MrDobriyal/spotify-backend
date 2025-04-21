@@ -1,0 +1,49 @@
+🎧 Core API Endpoints for Your Spotify Clone
+1. 🔊 Audio (Songs) APIs
+Action	Route	Method
+Get all songs	/api/audios	GET
+Get single song	/api/audios/{id}	GET
+Add song	/api/audios	POST
+Update song	/api/audios/{id}	PUT
+Delete song	/api/audios/{id}	DELETE
+2. 📀 Playlists APIs
+Action	Route	Method
+All playlists	/api/playlists	GET
+Create playlist	/api/playlists	POST
+View playlist	/api/playlists/{id}	GET
+Update playlist	/api/playlists/{id}	PUT
+Delete playlist	/api/playlists/{id}	DELETE
+Add song to playlist	/api/playlists/{id}/add-song	POST
+Remove song from list	/api/playlists/{id}/remove-song	POST
+3. ❤️ Liked Songs APIs
+Action	Route	Method
+Get liked songs	/api/liked-songs	GET
+Like a song	/api/liked-songs/{audio_id}	POST
+Unlike a song	/api/liked-songs/{audio_id}	DELETE
+4. 👤 User Authentication (if needed)
+Use Laravel Sanctum or Passport for API auth:
+
+Action	Route	Method
+Register	/api/register	POST
+Login	/api/login	POST
+Logout	/api/logout	POST
+User Profile	/api/user	GET
+5. 🔍 Search API
+Action	Route	Method
+Search songs or playlists	/api/search?q={query}	GET
+🛠 Suggested Controllers to Create
+bash
+Copy
+Edit
+php artisan make:controller Api/AudioController
+php artisan make:controller Api/PlaylistController
+php artisan make:controller Api/LikedSongController
+php artisan make:controller Api/AuthController
+🧠 Bonus Features to Consider Later
+Genres filter (based on type)
+
+Recently played
+
+Recommended songs
+
+Trending / Most liked
